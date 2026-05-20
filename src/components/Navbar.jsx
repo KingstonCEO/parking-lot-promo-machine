@@ -26,10 +26,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <span className="text-matrix-green font-mono text-2xl font-bold group-hover:text-glow transition-all">
-              {'>'}_
-            </span>
+          <a href="#" className="flex items-center gap-3 group">
+            <img 
+              src="/kingston-logo.jpg" 
+              alt="The Kingston Agency" 
+              className="h-12 w-auto object-contain"
+            />
             <span className="text-white font-bold text-sm lg:text-base hidden sm:block">
               The Parking Lot Promo Machine
             </span>
