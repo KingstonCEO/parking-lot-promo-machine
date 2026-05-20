@@ -59,36 +59,19 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side - Visual Card */}
+          {/* Right Side - Video */}
           <div className="section-fade">
-            <div className="card-matrix p-8 lg:p-10">
-              {/* Steps */}
-              <div className="flex flex-col gap-6 mb-8">
-                {steps.map((step, index) => (
-                  <div key={index} className="flex items-center gap-4">
-                    <div className="w-16 h-16 rounded-full bg-matrix-dark flex items-center justify-center text-3xl border border-matrix-green/30">
-                      {step.icon}
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3">
-                        <span className="text-matrix-green font-mono text-sm">0{index + 1}</span>
-                        <div className="flex-1 h-px bg-gradient-to-r from-matrix-green/50 to-transparent" />
-                      </div>
-                      <p className="text-white font-bold text-lg">{step.title}</p>
-                    </div>
-                    {index < steps.length - 1 && (
-                      <div className="absolute left-8 w-px h-6 bg-matrix-green/30 transform translate-y-12" />
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              {/* Proof Badge */}
-              <div className="bg-matrix-green/10 border border-matrix-green rounded-lg p-4 text-center glow-green">
-                <p className="text-matrix-green font-bold text-xl">
-                  ⚡ Proof Beats Promises ⚡
-                </p>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden border-2 border-matrix-green/30 glow-green">
+              <video 
+                className="w-full h-auto" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              >
+                <source src="/parking-lot-demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
