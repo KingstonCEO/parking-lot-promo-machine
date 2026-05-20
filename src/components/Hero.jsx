@@ -34,10 +34,10 @@ const Hero = () => {
               <div className="relative rounded-2xl overflow-hidden border-2 border-matrix-green/30 glow-green">
                 <video 
                   className="w-full h-auto" 
-                  autoPlay 
                   loop 
                   playsInline
                   controls
+                  preload="auto"
                 >
                   <source src="/parking-lot-demo.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -80,10 +80,10 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden border-2 border-matrix-green/30 glow-green">
               <video 
                 className="w-full h-auto" 
-                autoPlay 
                 loop 
                 playsInline
                 controls
+                preload="auto"
               >
                 <source src="/parking-lot-demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
