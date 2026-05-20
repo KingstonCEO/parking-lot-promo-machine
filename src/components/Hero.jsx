@@ -66,8 +66,8 @@ const Hero = () => {
                 className="w-full h-auto" 
                 autoPlay 
                 loop 
-                muted 
                 playsInline
+                controls
               >
                 <source src="/parking-lot-demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
