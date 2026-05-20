@@ -29,6 +29,22 @@ const Hero = () => {
               Walk up. Look around. Snap the business. Command the machine. Walk back in with the pitch.
             </p>
 
+            {/* Video - Mobile Only (shown after subheadline) */}
+            <div className="lg:hidden mb-8">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-matrix-green/30 glow-green">
+                <video 
+                  className="w-full h-auto" 
+                  autoPlay 
+                  loop 
+                  playsInline
+                  controls
+                >
+                  <source src="/parking-lot-demo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
             {/* Supporting Copy */}
             <div className="space-y-4 text-gray-400 mb-8">
               <p className="text-lg">This is not another "AI assistant."</p>
@@ -59,8 +75,8 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side - Video */}
-          <div className="section-fade">
+          {/* Right Side - Video (Desktop Only) */}
+          <div className="section-fade hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden border-2 border-matrix-green/30 glow-green">
               <video 
                 className="w-full h-auto" 
